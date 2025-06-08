@@ -8,12 +8,18 @@ This project is an AI-powered chatbot that answers questions about a personalize
 - **Customer Review Integration:** Uses real customer reviews to provide contextually relevant responses.
 - **Gradio Interface:** User-friendly web interface for easy interaction.
 
-## How It Works
+## Prerequisites
 
-1. **User submits a question** about the trip organizer.
-2. **Retriever** fetches relevant reviews based on the question.
-3. **Language model** generates an answer using the reviews as context.
-4. **Gradio interface** displays the answer to the user.
+- **Ollama:**  
+  You must install [Ollama](https://ollama.com/) on your system.
+
+- **Pull the required models:**  
+  Open your terminal and run:
+  ```sh
+  ollama pull llama3.2
+  ollama pull <embedding-model-name>
+  ```
+  Replace `<embedding-model-name>` with the embedding model you use in your `vector.py`.
 
 ## Setup
 
@@ -56,4 +62,4 @@ An AI chatbot using Retrieval-Augmented Generation (RAG) to answer questions abo
 ---
 
 **Note:**  
-Replace `<repo-url>` and `<project-folder>` with your actual repository URL and folder name.
+Replace `<repo-url>`, `<project-folder>`, and `<embedding-model-name>` with your actual repository URL, folder name, and embedding model name.
